@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Web Full Stack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Desarrollo Web: Mi Primer Proyecto</h1>
+
+        <section>
+            <h2>Registro al Servidor</h2>
+            <form action="procesar.php" method="POST">
+                <li>
+                <label>Nombre:</label>
+                <input type="text" name="nombre" required>
+                </li>
+                <li></li>
+                <label>Edad:</label>
+                <input type="number" name="edad" required>
+                </li>
+                
+                <button type="submit">Enviar al Servidor</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Selector de Producto</h2>
+            <div class="product-card">
+                <div class="image-card" style="background-image: url('gray-benz.webp')"></div>
+                
+                <h2>Mercedez Benz C300</h2>
+                
+                <div class="colors">
+                    <span class="red-btn">Rojo</span>
+                    <span class="gray-btn">Gris</span>
+                </div>
+                
+                <button id="cartButton">Agregar al carrito</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
